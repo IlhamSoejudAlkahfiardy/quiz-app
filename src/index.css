@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --color-cream: #fff8e7;
+  --color-ink: #0a0a0a;
+  --color-accent: #ff4d6d;
+  --color-cyan: #00d4ff;
+  --color-yellow: #ffe566;
+  --color-success: #06d6a0;
+  --color-danger: #ef476f;
+  --color-danger-light: #ffe0e8;
+  --color-success-light: #d8fff2;
+  --color-warning-light: #ffb3c1;
+  --color-success-dark: #0a7a5a;
+
+  --shadow-brutal: 6px 6px 0 0 #0a0a0a;
+  --shadow-brutal-sm: 4px 4px 0 0 #0a0a0a;
+  --shadow-brutal-xs: 2px 2px 0 0 #0a0a0a;
+
+  --animate-timer-warning: timer-warning 1s step-end infinite;
+
+  @keyframes timer-warning {
+    50% {
+      background-color: #ef476f;
+      color: white;
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen font-sans text-ink antialiased;
+    background-color: var(--color-cream);
+    background-image:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
