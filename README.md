@@ -2,6 +2,8 @@
 
 Aplikasi kuis interaktif berbasis React + TypeScript yang mengambil soal dari [Open Trivia Database (OpenTDB)](https://opentdb.com/). Dilengkapi login sederhana, timer, navigasi satu soal per halaman, penyimpanan progres di localStorage, dan halaman hasil.
 
+Aplikasi ini dapat diakses secara online melalui [Quiz App](https://app.quiz.alkahfiardy.com/)
+
 ## Fitur
 
 - **Login** — validasi nama terhadap daftar peserta terdaftar (`src/data/user.ts`)
